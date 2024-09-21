@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calculator {
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+.display input {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.operator {
+  background-color: #777;
+}
+
+button.equals {
+  background-color: #4CAF50;
+}
+
+button.clear {
+  background-color: #f44336;
+}
+
+button.dob {
+  background-color: #2196F3;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.dob-container {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dob-container label {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.dob-container input[type="date"] {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.dob-container button.dob-submit {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
